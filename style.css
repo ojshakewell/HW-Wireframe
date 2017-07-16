@@ -17,20 +17,24 @@ font-size: 18px
 
 
 */
-body {
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 18px
-	font-color: #777;
-	text-align: center;	
+.wrapper {
 	width: 960px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	color: #777;
+	text-align: center;	
+	margin-left: 100px;	
+}
+
+body {
 	background-color: #777;
-	/*padding: 5px;*/
 }
 
 header, nav, footer {
-	width: 760px;
-	padding: 30px; 
-	margin: 5px 100px 5px 100px;	
+	padding-top: 30px; 
+	padding-bottom: 30px;
+	margin-top: 10px;	
+	margin-bottom: 10px;
 }
 
 header, nav, footer, section, aside, h1, p {
@@ -38,8 +42,11 @@ header, nav, footer, section, aside, h1, p {
 }
 
 section {
-	width: 500px;
-	padding: 30px 10px 10px 10px;
+	float: left;
+	width: 495px;
+	height: 175px;
+	padding: 30px;
+	margin: 20px 20px 20px 0;
 }
 
 article {
@@ -47,28 +54,31 @@ article {
 	padding-top: 20px;
 	padding-bottom: 10px;
 	background-color: #777;
+	
 }
 
 .art1 {
-	color: white;
+	color: #ebebeb;
 }	
 
 h1, p {
-	margin-top: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-	margin-left: 20px;
+	margin: 10px 0 10px 20px;
+	padding: 10px 0 10px 0;
 	width: 450px;
 }
 
 aside{
-	padding: 34px 126px 174px 126px;
-	margin: 5px;
+	float: right;
+	width: 380px;
+	padding: 20px 0px 20px 0px;
+	margin-top: 20px;
+	height: 195px;
 }
 
-table{
-	width: 760px;
-	margin-left: 97px;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
+
 
